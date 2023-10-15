@@ -121,7 +121,12 @@ header .head_content .head_right li a {
   color: black;
   font-weight: 450;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
+.navigation .collapse  #navMauCam{
+  color: #ff6e65;
+}
+
 .navigation .collapse {
   transform: translateX(7px);
 }
@@ -196,22 +201,32 @@ header .head_content .head_right li a {
     border: none;
     padding: 5px;
     font-size: 23px;
-    
-  
-    
 }
+ #cheDoSang i{
+  color: #0d369f;
+  transition: all .5s;
+}
+ .navigation #cheDosang:hover i{
+  color: #ff6e65 ;
+ }
+
 #cheDoToi i{
   color: #0d369f;
   transition: all .5s;
 }
+
+.navigation #cheDoToi:hover i{
+ color: #ff6e65 ;
+}
+
+
+
 #cheDoSang i{
   color: #0d369f;
   transition: all .5s;
 }
-.navigation #cheDoToi:hover i{
- color: #ff6e65 ;
-}
-.navigation #cheDosang:hover i{
+
+.navigation #cheDoSang:hover i{
  color: #ff6e65 ;
 }
 /* CAROUSEL CSS  */
@@ -220,6 +235,10 @@ header .head_content .head_right li a {
 }
 .stu_carousel .carousel-inner {
   height: 100vh;
+}
+.stu_carousel .carousel-inner .carousel-item img{
+  height: 100vh;
+  object-fit: cover;
 }
 .stu_carousel .carousel-caption h5 {
   font-size: 70px;
@@ -499,6 +518,8 @@ header .head_content .head_right li a {
 .number .number_title .title_down {
   color: #707070;
   letter-spacing: 0.8px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 /* number content css  */
 .number .number_content .number_item {
@@ -950,4 +971,135 @@ footer .foot_copyright a{
 .back-to-top:hover{
   color: white;
   opacity: 0.9;
+}
+
+
+/* chế độ tối class  */
+/* .giaoDienToi #cheDoSang i{
+  color: #0d369f;
+  transition: all .5s;
+} */
+.giaoDienToi .navigation .cheDosang i{
+  color: #ff6e65 ;
+ }
+
+.giaoDienToi header{
+  background: #4867B0 ;
+}
+
+
+.giaoDienToi .navigation,
+.giaoDienToi .navigation .collapse .dropdown ul li a{
+  background-color: #161C2D ;
+}
+.giaoDienToi .navigation .collapse .nav-item .nav-link,
+.giaoDienToi .navigation .container-fluid h1 .navbar-brand,
+.giaoDienToi .dropdown .dropdown-menu a,
+.giaoDienToi .number .number_content .number_item h3,
+.giaoDienToi .number .number_content .number_item,
+.giaoDienToi .contact .contact_text h3,
+.giaoDienToi .intructors_content .card-body h5 {
+  color: white;
+}
+.giaoDienToi .navigation .collapse .nav-item .nav-link:hover,
+.giaoDienToi .navigation .container-fluid h1 .navbar-brand:hover{
+  color: #ff6e65;
+}
+
+
+.giaoDienToi section:not(.navigation),
+body.giaoDienToi,
+.giaoDienToi .dropdown .dropdown-menu {
+  background-color: #161C2D !important;
+}
+.giaoDienToi .title_content,
+.giaoDienToi .number_title .title_up,
+.giaoDienToi .studious_content .item_content a,
+.giaoDienToi .feedback .feedback_title h3,
+.giaoDienToi .intructors .intructors_title h3,
+.giaoDienToi .feedback_content .item_caption .caption_text h5,
+.giaoDienToi .foot_up .foot_form h4
+{
+  color: white;
+}
+.giaoDienToi .studious_content .item_icon i{
+  color: #4867B0;
+  background-color: #262C3D;
+}
+.giaoDienToi .studious_content .item_content .content_text,
+.number .number_title .title_down,
+.giaoDienToi .feedback .feedback_content .feedback_item p,
+.giaoDienToi .intructors_content .card-body p,
+.giaoDienToi .contact .contact_text p,
+.giaoDienToi .foot_up .foot_form p {
+ color: #B7B7B7;
+}
+.giaoDienToi .feedback .feedback_content .feedback_item{
+  background: #161c2d;
+    border-radius: 4px;
+    box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
+    padding: 32px;
+}
+.giaoDienToi .intructors .intructors_content .card{
+  box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
+    padding: 10px;
+    background: #00000000;
+    border-radius: 8px;
+}
+.giaoDienToi .foot_up .form_item button{
+  background-color: #4867b0;
+  transition: all .5s;
+}
+.giaoDienToi .foot_up .form_item button:hover{
+background-color: #4360A3;
+}
+.giaoDienToi footer .foot_up .foot_form{
+background-color: #161c2d;
+box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%)
+}
+.giaoDienToi footer #foot_input{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.giaoDienToi .back-to-top{
+  background-color: #4867b0;
+  opacity: all .5s;
+}
+.giaoDienToi .back-to-top:hover{
+  opacity: .8
+}
+
+
+/* responsive  */
+@media screen and (max-width: 992px){
+  header{
+    display: none;
+  }
+}
+@media screen and (max-width: 992px){
+  .stu_carousel{
+    position: absolute;
+  }
+}
+@media  (max-width: 480px){
+  .stu_carousel .carousel-caption h5{
+    font-size: 35px;
+  }
+  .stu_carousel .container{
+    margin-bottom: 650px;
+
+  }
+  .stu_carousel .container .box_color{
+    bottom: -870px;
+  }
+  .stu_carousel .box_color .box_item{
+    margin-bottom: 20px;
+  }
+  .number .number_content .number_item{
+    margin-top: 20px;
+  }
+  .intructors .intructors_content .card{
+    width: 100% !important;
+  }
 }
