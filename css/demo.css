@@ -1032,3 +1032,32 @@ body.giaoDienToi {
   .giaoDienToi .back-to-top:hover{
     opacity: .8
   }
+
+  /* RESPONSIVE ALL */
+  @media screen and (max-width: 991px){
+    header{
+      display: none;
+    }
+    .navigation.fixed-top{
+      position: fixed;
+      height: auto;
+      z-index: 15;
+      background-color: transparent;
+      width: 100%;
+     }
+     .navigation.sticky-theme{
+       background-color: white;
+     }
+     .navbar #navbarSupportedContent{
+       background-color: white;
+     } 
+     .navigation .collapse .dropdown ul{
+       width: 50%;
+       transform: translateX(10px);
+     }
+  }
+  @media screen and (max-width: 480px){
+    .code_ex .allCode-Ex p{
+      font-size: 14px;
+    }
+  }

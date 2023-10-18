@@ -21,10 +21,14 @@ var nutSang = document.getElementById("cheDoSang");
 nutSang.style.display = "none";
 
 document.getElementById('cheDoToi').onclick = function(){
+  document.getElementById("bodyOf-Studious").classList.remove("giaoDienSang");
+  document.getElementById("bodyOf-Studious").classList.add("giaoDienToi");
   nutSang.style.display = 'inline-block'
   nutToi.style.display = 'none'
 }
 document.getElementById('cheDoSang').onclick = function(){
+  document.getElementById("bodyOf-Studious").classList.remove("giaoDienToi");
+  document.getElementById("bodyOf-Studious").classList.add("giaoDienSang");
   nutSang.style.display = 'none'
   nutToi.style.display = 'inline-block'
 }

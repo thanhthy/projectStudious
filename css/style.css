@@ -63,6 +63,7 @@ header .head_content .head_right li a {
 #navFix{
   display: flex;
   /* transition: all 0.5s; */
+  /* position: relative; */
 }
 .navigation .navbar-expand-lg{
   flex-basis: 95%;
@@ -1072,26 +1073,41 @@ box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%)
 
 
 /* responsive  */
+/* @media screen and (max-width: ) */
+
+
+
+
+
 @media screen and (max-width: 992px){
   header{
     display: none;
   }
-}
-@media screen and (max-width: 992px){
-  .stu_carousel{
-    position: absolute;
+  .navigation.fixed-top{
+   position: fixed;
+   height: auto;
+   z-index: 15;
+   background-color: transparent;
+   width: 100%;
   }
-}
-@media  (max-width: 480px){
+  .navigation.sticky-theme{
+    background-color: white;
+  }
+  .navbar #navbarSupportedContent{
+    background-color: white;
+  } 
+  .navigation .collapse .dropdown ul{
+    width: 50%;
+    transform: translateX(10px);
+  }
   .stu_carousel .carousel-caption h5{
     font-size: 35px;
   }
   .stu_carousel .container{
-    margin-bottom: 650px;
-
+    margin-bottom: 200px;
   }
   .stu_carousel .container .box_color{
-    bottom: -870px;
+    bottom: -343px;
   }
   .stu_carousel .box_color .box_item{
     margin-bottom: 20px;
@@ -1099,7 +1115,67 @@ box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%)
   .number .number_content .number_item{
     margin-top: 20px;
   }
+  .stu_carousel .box_color .box_content a.box_title {
+    font-size: 20px;
+  }
+  /* .stu_carousel{
+    position: absolute;
+  } */
+}
+@media screen and (max-width: 767px){
+  .stu_carousel .carousel-caption h5{
+    font-size: 35px;
+  }
+  .stu_carousel .container{
+    margin-bottom: 720px;
+  }
+  .stu_carousel .container .box_color{
+    bottom: -834px;
+  }
+  .stu_carousel .box_color .box_item{
+    margin-bottom: 20px;
+  }
+  .number .number_content .number_item{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px){
   .intructors .intructors_content .card{
     width: 100% !important;
   }
 }
+
+@media screen and (max-width: 480px){
+  /* #navfix{
+    position: relative;
+  }
+  .stu_carousel{
+    position: absolute;
+  } */
+  .stu_carousel .carousel-caption h5{
+    font-size: 35px;
+  }
+  .stu_carousel .container{
+    margin-bottom: 720px;
+
+  }
+  .stu_carousel .container .box_color{
+    bottom: -910px;
+  }
+  .stu_carousel .box_color .box_item{
+    margin-bottom: 20px;
+  }
+  .number .number_content .number_item{
+    margin-top: 20px;
+  }
+  
+}
+@media screen and (max-width:390px){
+  .stu_carousel .carousel-caption h5{
+    font-size: 28px;
+  }
+  
+}
+  
+
+
